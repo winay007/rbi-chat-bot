@@ -29,10 +29,11 @@ class  ChattingScreenState extends State<ChattingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(child: Container(child: const Text("Feedback",style: TextStyle(color: Colors.black),),)),
       appBar: AppBar(
         title: Container(
-          margin: const EdgeInsets.only(left: 20),
-          child: const Text('RBI chat bot',
+          margin: const EdgeInsets.only(left: 16),
+          child: const Text('WinQ',
               style: TextStyle(
                   fontSize:20,
                   fontFamily: 'Poppins',
@@ -44,8 +45,8 @@ class  ChattingScreenState extends State<ChattingScreen> {
           children: [
             Expanded(child: MessagesScreen(messages)),
             Container(
-              margin: EdgeInsets.only(top: 8),
-              padding: EdgeInsets.all(8),
+              margin: EdgeInsets.only(top: 8,left: 10),
+              padding: EdgeInsets.all(12),
               child: Row(
                 children: [
                   Expanded(
